@@ -145,7 +145,7 @@
 	   Set lowerBound = 1
 	   Set upperBound = n 
 	   while x not found
-       if upperBound < lowerBound 
+         if upperBound < lowerBound 
          EXIT: x does not exists.
        set midPoint = lowerBound + ( upperBound - lowerBound ) / 2
        if A[midPoint] < x
