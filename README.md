@@ -35,19 +35,23 @@
    end procedure
    
 2. Insertion Sort
+
   a. Algoritma Insertion Sort
+  
     Langkah 1 - Jika itu adalah elemen pertama, itu sudah diurutkan. return 1;
     Langkah 2 - Pilih elemen berikutnya
     Langkah 3 - Bandingkan dengan semua elemen dalam sub-daftar yang diurutkan
     Langkah 4 - Geser semua elemen dalam sub-daftar yang diurutkan yang lebih besar dari nilai yang akan diurutkan
     Langkah 5 - Masukkan nilainya
     Langkah 6 - Ulangi sampai daftar diurutkan
+    
   b. Pseudocode Insertion Sort
+  
     procedure insertionSort( A : array of items )
-   int holePosition
-   int valueToInsert
+    int holePosition
+    int valueToInsert
 	
-   for i = 1 to length(A) inclusive do:
+    for i = 1 to length(A) inclusive do:
 	
       /* select value to be inserted */
       valueToInsert = A[i]
@@ -63,11 +67,13 @@
       /* insert the number at hole position */
       A[holePosition] = valueToInsert
       
-   end for
-   end procedure
+    end for
+    end procedure
    
 3. Bubble Sort
+
   a. Algoritma Bubble Sort
+  
     Kami menganggap daftar adalah larik n elemen. Kami lebih lanjut mengasumsikan bahwa 
     fungsi swap swap nilai-nilai elemen array yang diberikan.
     begin BubbleSort(list)
@@ -78,7 +84,9 @@
     end for
     return list
     end BubbleSort
+    
   b. Pseudocode Bubble Sort
+  
     procedure bubbleSort( list : array of items )
     loop = list.count;
     for i = 0 to loop-1 do:
@@ -97,10 +105,13 @@
       if(not swapped) then
          break
       end if   
-   end for
-   end procedure return list
-4. Linear Search 
+    end for
+    end procedure return list
+    
+4. Linear Search
+
   a. Algoritma Linear Search 
+  
     Linear Search (Array A, Value x)
     Langkah 1: Setel ke 1
     Langkah 2: jika saya> lanjutkan ke langkah 7
@@ -110,7 +121,9 @@
     Langkah 6: Elemen Cetak x Ditemukan di indeks i dan lanjutkan ke langkah 8
     Langkah 7: Elemen cetak tidak ditemukan
     Langkah 8: Keluar
+    
   b. Pseudocode Linear Search
+  
     procedure linear_search (list, value)
     for each item in the list
       if match item == value
