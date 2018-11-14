@@ -156,3 +156,36 @@
          EXIT: x found at location midPoint
        end while
        end procedure
+
+6. Shell Sort
+   a. Algoritma Shell Sort
+   
+       Langkah 1 - Inisialisasi nilai h
+       Langkah 2 - Bagilah daftar menjadi sub-daftar yang lebih kecil dari interval yang sama h
+       Langkah 3 - Urutkan sub-daftar ini menggunakan penyisipan
+       Langkah 3 - Ulangi sampai daftar lengkap disortir
+   b. Pseudecode Shell Sort
+   
+       procedure shellSort()
+       A : array of items 
+       /* calculate interval*/
+       while interval < A.length /3 do:
+       interval = interval * 3 + 1	    
+       end while
+       while interval > 0 do:
+       for outer = interval; outer < A.length; outer ++ do:
+       /* select value to be inserted */
+       valueToInsert = A[outer]
+       inner = outer;
+         /*shift element towards right*/
+         while inner > interval -1 && A[inner - interval] >= valueToInsert do:
+            A[inner] = A[inner - interval]
+            inner = inner - interval
+         end while
+       /* insert the number at hole position */
+       A[inner] = valueToInsert
+       end for
+       /* calculate interval*/
+       interval = (interval -1) /3;	  
+       end while
+       end procedure
