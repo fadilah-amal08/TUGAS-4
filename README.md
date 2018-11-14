@@ -189,3 +189,44 @@
        interval = (interval -1) /3;	  
        end while
        end procedure
+7. Quick Sort
+
+   a. Algoritma Quick Sort
+   
+       Langkah 1 - Pilih nilai indeks tertinggi memiliki pivot
+       Langkah 2 - Ambil dua variabel ke kiri dan kanan dari daftar tidak termasuk pivot
+       Langkah 3 - poin kiri ke indeks rendah
+       Langkah 4 - tepat menunjuk ke tinggi
+       Langkah 5 - sementara nilai di kiri kurang dari pivot bergerak ke kanan
+       Langkah 6 - sementara nilai di kanan lebih besar dari pivot ke kiri
+       Langkah 7 - jika kedua langkah 5 dan langkah 6 tidak cocok dengan swap kiri dan kanan
+       Langkah 8 - jika dibiarkan ≥ kanan, titik di mana mereka bertemu adalah pivot baru
+     
+   b. Pseudecode Quick Sort
+   
+   	function partitionFunc(left, right, pivot)
+   	leftPointer = left
+   	rightPointer = right - 1
+        while True do
+        while A[++leftPointer] < pivot do
+        //do-nothing            
+        end while
+	
+        while rightPointer > 0 && A[--rightPointer] > pivot do
+        //do-nothing         
+        end while
+		
+        if leftPointer >= rightPointer
+        break
+        else                
+        swap leftPointer,rightPointer
+        end if	
+        end while 
+	
+        swap leftPointer,right
+        return leftPointer
+	
+        end function
+8. Hash Table 
+   a. Algoritma Hash Table
+      
