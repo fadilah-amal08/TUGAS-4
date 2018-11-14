@@ -147,7 +147,7 @@
 	   while x not found
          if upperBound < lowerBound 
          EXIT: x does not exists.
-       set midPoint = lowerBound + ( upperBound - lowerBound ) / 2
+         set midPoint = lowerBound + ( upperBound - lowerBound ) / 2
        if A[midPoint] < x
          set lowerBound = midPoint + 1
        if A[midPoint] > x
@@ -164,6 +164,7 @@
        Langkah 2 - Bagilah daftar menjadi sub-daftar yang lebih kecil dari interval yang sama h
        Langkah 3 - Urutkan sub-daftar ini menggunakan penyisipan
        Langkah 3 - Ulangi sampai daftar lengkap disortir
+       
    b. Pseudecode Shell Sort
    
        procedure shellSort()
@@ -189,6 +190,7 @@
        interval = (interval -1) /3;	  
        end while
        end procedure
+       
 7. Quick Sort
 
    a. Algoritma Quick Sort
@@ -227,6 +229,7 @@
         return leftPointer
 	
         end function
+	
 8. Hash Table 
    a. Algoritma Hash Table
       
