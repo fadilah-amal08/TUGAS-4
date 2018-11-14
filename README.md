@@ -1,12 +1,15 @@
 # TUGAS-4
 1. Selection Sort
   a. Algoritma Selection Sort
+  
     Langkah 1 - Setel MIN ke lokasi 0
     Langkah 2 - Cari elemen minimum dalam daftar
     Langkah 3 - Tukar dengan nilai di lokasi MIN
     Langkah 4 - Menambah MIN untuk menunjuk ke elemen berikutnya
     Langkah 5 - Ulangi hingga daftar diurutkan
+    
   b. Pseudocode Selection Sort
+  
     procedure selection sort 
     list  : array of items
     n     : size of list
