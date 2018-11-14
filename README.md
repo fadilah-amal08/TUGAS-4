@@ -232,4 +232,6 @@
 	
 8. Hash Table 
    a. Algoritma Hash Table
-      
+   
+   b. Pseudocode Hash Table
+   
