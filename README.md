@@ -31,9 +31,8 @@
       if indexMin != i  then
          swap list[min] and list[i]
       end if
-   end for
-	
-   end procedure
+      end for
+      end procedure
    
 2. Insertion Sort
 
