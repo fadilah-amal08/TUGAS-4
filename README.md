@@ -176,11 +176,17 @@
    b. Pseudecode Shell Sort
    
        procedure shellSort()
+       
        A : array of items 
+       
        /* calculate interval*/
+       
        while interval < A.length /3 do:
-       interval = interval * 3 + 1	    
+       
+       interval = interval * 3 + 1	
+       
        end while
+       
        while interval > 0 do:
        for outer = interval; outer < A.length; outer ++ do:
        /* select value to be inserted */
