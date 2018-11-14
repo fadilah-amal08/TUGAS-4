@@ -231,7 +231,12 @@
         end function
 	
 8. Merge Sort 
+
    a. Algoritma Merge Sort
+   
+       Langkah 1 - jika hanya satu elemen dalam daftar itu sudah diurutkan, kembali.
+       Langkah 2 - bagilah daftar secara rekursif menjadi dua bagian hingga tidak dapat dibagi lagi.
+       Langkah 3 - menggabungkan daftar yang lebih kecil ke dalam daftar baru dalam urutan terurut
    
    b. Pseudocode Merge Sort
    
